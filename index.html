@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankur — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="mian.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+</head>
+
+<body>
+    <header>
+        <nav class="head">
+
+            <h4 class="gradient-text">Ankur</h4>
+
+            <div class="menu-btn" id="menuBtn">
+                ☰
+            </div>
+
+            <ul id="navLinks">
+                <li class="gradient-text"><a href="#home">Home</a></li>
+                <li class="gradient-text"><a href="#about">About me</a></li>
+                <li class="gradient-text"><a href="#skill">Skills</a></li>
+                <li class="gradient-text disabled-link"><a href="#">My Projects</a></li>
+                <li class="gradient-text"><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home section  -->
+        <section id="home">
+            <!-- Left side container -->
+            <div class="container">
+                <!-- //left side box inside container -->
+                <div class="left">
+                    <div class="hero-left">
+                        <div class="hero-greet">
+                            <span class="greet-line"></span>
+                            <p>Hello👋</p>
+                        </div>
+                        <h1 class="hero-name">I'm <span class="gradient-text">Ankur Mishra</span></h1>
+                        <div class="hero-roles">
+                            <span class="role-pre">A passionate </span>
+                            <span class="typing-text" id="typed"></span>
+                        </div>
+                        <p class="hero-bio">
+                            Machine Learning and Data Science enthusiast focused on building intelligent solutions using AI and Computer Vision. Experienced in deep learning, predictive analytics, and real-world research projects. Passionate about transforming data into actionable insights and continuously exploring emerging technologies. Dedicated to solving impactful problems through innovation and research.
+                        </p>
+
+                        <!-- Buttons for download resume and for contact  -->
+                        <div class="hero-btn">
+                            <a href="assets/Resume.pdf" class="btn btn-primary" id="dlResume"
+                                download="Ankur_Kumar_Resume.pdf">
+
+                                <i class="fas fa-download"></i>
+                                <span>Download Resume</span>
+
+                                <div class="btn-shine"></div>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-paper-plane"></i><span>Contact Me</span>
+                            </a>
+                        </div>
+
+                        <!-- Social media links -->
+                        <div class="socials">
+                            <a href="https://github.com/Ankur1406-dpt" target="_blank" rel="noopener" class="si" aria-label="GitHub"><i class="fab fa-github so-link"></i></a>
+                            <a href="https://www.linkedin.com/in/ankur-mishra-100a68316/" target="_blank" rel="noopener" class="si" aria-label="LinkedIn"><i class="fab fa-linkedin-in so-link"></i></a>
+                            <a href="#" target="_blank" rel="noopener" class="si" aria-label="LeetCode"><i class="fas fa-code so-link"></i></a>
+                            <a href="https://scholar.google.com/citations?user=wNl4j0UAAAAJ&hl=en" target="_blank" rel="noopener" class="si" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar so-link"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- seperator for seperate left and right box-->
+                <div class="sep">
+                    <div class="seperator"></div>
+                    <div class="scroll-indicator">
+                        <span class="scroll-text">Scroll Down</span>
+                        <div class="scroll-line"></div>
+                    </div>
+                </div>
+
+                <!-- Right box inside container  -->
+                <div class="right">
+                    <div class="skills">
+                        <div class="fl_icon python"><i class="fa-brands fa-python"></i> Python</div>
+                        <div class="fl_icon tensorflow"><i class="fa-solid fa-brain"></i> TensorFlow</div>
+                        <div class="fl_icon scikit"><i class="fa-solid fa-chart-line"></i> Scikit-learn</div>
+                        <div class="fl_icon cv"><i class="fa-solid fa-eye"></i> Computer Vision</div>
+                        <div class="fl_icon sql"><i class="fa-solid fa-database"></i> SQL</div>
+                    </div>
+                    <div class="outer_cl">
+                        <div class="inner_cl">
+
+                            <div class="ch_inner_cl">
+                                <img src="images/profile.png" alt="Ankur Kumar" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section  -->
+        <section id="about">
+            <div class="container1">
+                <h1>About <span>ME</span></h1>
+                <div class="seperator2"></div>
+                <p class="d_top">Aspiring Machine Learning and Data Science professional with hands-on experience in Computer Vision, Deep Learning, and Data Analytics. Skilled in developing and optimizing ML models using ResNet50, EfficientNet, CNNs, and classical machine learning algorithms including Naive Bayes, KNN, and Linear Regression. Experienced in image preprocessing, exploratory data analysis (EDA), and predictive modeling across domains such as medical imaging, plant disease detection, camouflage detection, and spam classification. Passionate about leveraging data-driven solutions to solve real-world problems through research, innovation, and continuous learning.
+                </p>
+                <div class="clg_info">
+
+                    <div class="ab_box">
+                        <span>Aug 2024</span>
+                        <p><b>Started B.tech at Parul University : </b>Enrolled in Computer Science Engineering. Began
+                            learning programing fundamentals, C, and core CS concepts like data structures and
+                            algorithms.</p>
+                    </div>
+                    <div class="ab_box">
+                        <span>March 2025</span>
+                        <p><b>Frontend Deep : </b>Proficient in HTML5 and CSS3 with experience building responsive web
+                            projects using Flexbox and CSS Grid. Familiar with JavaScript fundamentals and actively
+                            expanding my knowledge through practical development projects.</p>
+                    </div>
+                </div>
+                <div class="edu_info">
+                    <div class=" one info_card">
+                        <h3><i class="cl_icon fa-solid fa-graduation-cap"></i>Education
+                            <div class="sepe3"></div>
+                            <div class="card_in_box">
+                                <p>B.Tech in Computer Science & Engineering(AI and DS )</p>
+                                <p>Currently Pursuing Undergraduate Studies at Parul University</p>
+                                <p>Building Strong Foundations in Machine Learning and Data Science</p>
+                                <p>Studying Artificial Intelligence, Computer Vision, and Deep Learning</p>
+                                <p>Working on Research-Oriented Academic Projects</p>
+                                <p>Continuously Expanding Knowledge in Modern AI Technologies</p>
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="two info_card">
+                        <h3><i class="cl_icon fa-solid fa-crosshairs"></i>Location</h3>
+                        <div class="sepe3"></div>
+                        <div class="card_in_box">
+                            <p>Gujarat, India</p>
+                            <p>Student at Parul University</p>
+                            <p>Open to Remote Opportunities</p>
+                            <p>Open to Hybrid Internships</p>
+                            <p>Open to On-Site Roles</p>
+                            <p>Ready to Collaborate on Research and Development Projects</p>
+                        </div>
+
+                    </div>
+                    <div class="three info_card">
+                        <h3><i class="cl_icon fas fa-code"></i>Focus</h3>
+                        <div class="sepe3"></div>
+                        <div class="ca_f card_in_box">
+                            <p>Machine Learning and Data Science</p>
+                            <p>Computer Vision and Deep Learning</p>
+                            <p>Predictive Analytics and Data-Driven Solutions</p>
+                            <p>Research in Medical Imaging and Image Classification</p>
+                            <p>Building Real-World AI Applications</p>
+                            <p>Continuous Learning and Innovation in Emerging Technologies</p>
+                        </div>
+
+                    </div>
+                    <div class="four info_card">
+                        <h3><i class="cl_icon fa-solid fa-bullseye"></i>Career Goal</h3>
+                        <div class="sepe3"></div>
+                        <div class="card_in_box">
+                            <p>Become a Machine Learning Engineer and Data Scientist</p>
+                            <p>Contribute to Research in Artificial Intelligence</p>
+                            <p>Build Innovative AI-Powered Solutions</p>
+                            <p>Gain Real-World Industry and Research Experience</p>
+                            <p>Solve Complex Problems Using Data and Technology</p>
+                            <p>Continuously Learn and Adapt to Emerging AI Trends</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill" class="skills-section">
+
+            <h2 class="skills-title">
+                My <span>Skills</span>
+            </h2>
+
+            <div class="skills-line"></div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-tags">
+                        <span><i class="fa-brands fa-python py-icon"></i> Python</span>
+                        <span><i class="fa-solid fa-database sql-icon"></i> SQL</span>
+                        <span><i class="fa-solid fa-table pandas-icon"></i> Pandas</span>
+                        <span><i class="fa-solid fa-calculator numpy-icon"></i> NumPy</span>
+                        <span><i class="fa-solid fa-chart-simple eda-icon"></i> EDA</span>
+                        <span><i class="fa-solid fa-chart-pie analytics-icon"></i> Data Analytics</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span><i class="fa-solid fa-robot ml-icon"></i> Machine Learning</span>
+                        <span><i class="fa-solid fa-gears skl-icon"></i> Scikit-learn</span>
+                        <span><i class="fa-solid fa-percentage nb-icon"></i> Naive Bayes</span>
+                        <span><i class="fa-solid fa-circle-nodes knn-icon"></i> KNN</span>
+                        <span><i class="fa-solid fa-chart-line lr-icon"></i> Linear Regression</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Deep Learning</h3>
+                    <div class="skill-tags">
+                        <span><i class="fa-solid fa-network-wired dl-icon"></i> Deep Learning</span>
+                        <span><i class="fa-solid fa-brain tf-icon"></i> TensorFlow</span>
+                        <span><i class="fa-solid fa-microchip keras-icon"></i> Keras</span>
+                        <span><i class="fa-solid fa-layer-group cnn-icon"></i> CNN</span>
+                        <span><i class="fa-solid fa-arrows-spin tl-icon"></i> Transfer Learning</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Computer Vision</h3>
+                    <div class="skill-tags">
+                        <span><i class="fa-solid fa-eye cv-icon"></i> Computer Vision</span>
+                        <span><i class="fa-solid fa-sliders img-icon"></i> Image Processing</span>
+                        <span><i class="fa-solid fa-tags class-icon"></i> Image Classification</span>
+                        <span><i class="fa-solid fa-notes-medical med-icon"></i> Medical Image Analysis</span>
+                        <span><i class="fa-solid fa-diagram-project resnet-icon"></i> ResNet50</span>
+                        <span><i class="fa-solid fa-bolt eff-icon"></i> EfficientNet-B0</span>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div class="learning-card">
+                <h3>Currently Learning</h3>
+
+                <div class="learning-tags">
+                    <span>Generative AI</span>
+                    <span>Large Language Models (LLMs)</span>
+                    <span>MLOps</span>
+                    <span>PyTorch</span>
+                    <span>Hugging Face</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact section  -->
+        <section id="contact" class="contact-section">
+
+            <h1 class="contact-title">
+                Get <span>In Touch</span>
+            </h1>
+
+            <div class="contact-line"></div>
+
+            <div class="contact-container">
+
+                <!-- Left Side of contact for social connet-->
+
+                <div class="contact-left">
+
+                    <div class="contact-info-card">
+
+                        <h2>Let's Build Something Together...</h2>
+
+                       
+
+                        <div class="contact-details">
+
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>ankurmishra066014@gmail.com</span>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Vadodara, Gujarat</span>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Open For Internships</span>
+                            </div>
+
+                        </div>
+
+                        <div class="contact-socials">
+                            <a href="https://github.com/Ankur1406-dpt" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ankur-mishra-100a68316/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://scholar.google.com/citations?user=wNl4j0UAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- Right Side for form submission-->
+
+                <div class="contact-right">
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+                        <input type="hidden" name="access_key" value="1c656e35-de70-4fa0-a6f0-0159b4ae8500">
+
+                        <input type="hidden" name="from_name" value="Ankur Portfolio">
+
+                        <input type="text" name="name" placeholder="Your Name" required>
+
+                        <input type="email" name="email" placeholder="Your Email" required>
+
+                        <input type="text" name="subject" placeholder="Subject" required>
+
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+                        <button type="submit" class="send-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h2 class="footer-logo">
+                    Ankur
+                </h2>
+
+                <p>
+                    Computer Science Student passionate about
+                    Machine Learning, Deep Learning, Computer Vision and building
+                    real-world AI solutions.
+                </p>
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="https://github.com/Ankur1406-dpt" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/ankur-mishra-100a68316/" target="_blank">LinkedIn</a></li>
+                    <li><a href="#" target="_blank">LeetCode</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=wNl4j0UAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Ankur Kumar | All Rights Reserved
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

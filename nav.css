@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fire: linear-gradient(
+        90deg,
+        rgba(255, 51, 0, 0) 0%,
+        #ff3300 25%,
+        #ff6600 50%,
+        #ffcc00 75%,
+        rgba(255, 204, 0, 0) 100%
+    );
+    --fire-solid: linear-gradient(135deg, #ff3300 0%, #ff6600 50%, #ffcc00 100%);
+    --fire-glow:
+        0 0 12px rgba(255, 102, 0, 0.4),
+        0 0 24px rgba(255, 102, 0, 0.2);
+    --bg-black: #000000;
+    --bg-dark-gray: #080808;
+    --border-color: rgba(255, 102, 0, 0.2);
+    --text-primary: #ffffff;
+    --text-muted: #a0a0a0;
+    --primary: #ff6600;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    background: var(--bg-black);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding-top: 80px;
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 8%;
+    background: rgba(0, 0, 0, 0.92);
+    border-bottom: 1px solid var(--border-color);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gradient-text {
+    background: var(--fire-solid);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 2px rgba(255, 102, 0, 0.2));
+}
+
+nav h4 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+nav h4 span {
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background: var(--fire-solid);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: var(--transition);
+    filter: drop-shadow(0 0 3px rgba(255, 102, 0, 0.35));
+    padding: 4px 0;
+}
+
+nav ul li a:hover {
+    filter: drop-shadow(0 0 8px rgba(255, 102, 0, 0.8));
+    transform: translateY(-1px);
+}
+
+.disabled-link {
+    pointer-events: none;
+    opacity: 0.35;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.menu-btn:hover {
+    color: var(--primary);
+    filter: drop-shadow(0 0 5px var(--primary));
+}
